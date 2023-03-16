@@ -21,6 +21,15 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
+  i = {
+    -- Insert-mode navigation
+    ['<C-l>'] = {'<Right>'},
+    ['<C-h>'] = {'<Left>'},
+    ['<C-k>'] = {'<Up>'},
+    ['<C-j>'] = {'<Down>'},
+    -- Save in insert mode
+    ["<C-s>"] = {"<Esc>:w!<cr>"}
+  },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
