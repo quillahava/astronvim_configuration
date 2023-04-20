@@ -9,4 +9,19 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "EdenEast/nightfox.nvim",
+    as = "nightfox",
+    config = function()
+      require("nightfox").setup{
+        options = {
+          styles = {
+          comments = "italic",
+          keywords = "bold",
+          types = "italic,bold",
+          }
+        }
+      }
+    end,
+  },
 }
